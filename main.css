@@ -154,3 +154,80 @@ body {
     align-self: normal;
     border: none;
 }
+.feed {
+    grid-area: 2 / 2 / span 1/ span 1;
+    display: grid;
+    grid-template: 60px 40px 1fr / 1fr;
+    padding: 2vw;
+}
+.home_feed {
+    grid-area: 1 / 1 / span 1/ span 1;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #202227;
+}
+.continue_feed{
+    grid-area: 2 / 1 / span 1/ span 1;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #202227;
+}
+.continue_feed span{
+    float: right;
+    color: #393B3D;
+    font-weight: 500;
+    font-size: 12pt;
+    padding-right: 5px;
+}
+.continue_feed span span{
+    background-image: url("img/EvenMoreUtils.svg");
+    background-position-y: 45px;
+    background-size: 30px;
+    height: 15px;
+    width: 15px;
+    transform: translateX(5px);
+}
+.continue_feed_feed {
+    display: flex;
+}
+.gameSmall {
+    width: 150px;
+    height: 220px;
+}
+.gameSmall img{
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.gameSmall div p{
+    font-size: 9pt;
+    margin-top: 20px;
+}
+.gameSmall div span:nth-child(1){
+    background-image: url("img/EvenMoreUtils.svg");
+    background-position-y: 30px;
+    background-size: 30px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+.gameSmall div span:nth-child(2){
+    background-image: url("img/EvenMoreUtils.svg");
+    background-position-y: 16px;
+    background-size: 32px;
+    height: 15px;
+    width: 15px;
+    color: rgba(0, 0, 0, 0);
+}
+.friends_feed{
+
+}
+.event_feed{
+
+}
+.recommended_for_you_feed{
+
+}
+.side_data_feed{
+
+}
