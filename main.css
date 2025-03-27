@@ -326,8 +326,9 @@ body {
 .feed {
     grid-area: 2 / 2 / span 1/ span 1;
     display: grid;
-    grid-template: 60px 40px 1fr / 1fr;
-    padding: 2.5vw;
+    grid-template: 60px 40px 250px 40px 180px 40px/ calc(100% - 30px);
+    padding-left: 2vw;
+    padding-top: 3vh;
 }
 .home_feed {
     grid-area: 1 / 1 / span 1/ span 1;
@@ -360,12 +361,12 @@ body {
     display: flex;
 }
 .gameSmall {
-    width: 150px;
+    width: 170px;
     height: 220px;
     margin-right: 15px;
 }
 .gameSmall img{
-    width: 150px;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 5px;
 }
@@ -390,14 +391,75 @@ body {
     transform: translateY(-44px) translateX(50px);
 }
 .friends_feed{
-    
+    grid-area: 4 / 1 / span 1/ span 1;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #202227;
 }
-.event_feed{
-
+.friends_feed span{
+    float: right;
+    color: #393B3D;
+    font-weight: 500;
+    font-size: 12pt;
+    padding-right: 5px;
 }
-.recommended_for_you_feed{
-
+.friends_feed span span{
+    background-image: url("img/EvenMoreUtils.svg");
+    background-position-y: 45px;
+    background-size: 30px;
+    height: 15px;
+    width: 15px;
+    transform: translateX(5px);
 }
-.side_data_feed{
-
+.friend_icon {
+    margin-left: 20px;
+    width: 96px;
+}
+.friend_icon img {
+    background-color: #D4D4D4;
+    border-radius: 100%;
+    width: 100%;
+}
+.friend_icon p{
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10pt;
+    margin-top: 5px;
+}
+.recomendation_feed{
+    grid-area: 6 / 1 / span 1/ span 1;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #202227;
+}
+.recomendation_feed_feed {
+    display: flex;
+    margin-bottom: 40px;
+}
+.recomendation_feed_feed_recomendation {
+    width: 260px;
+    margin-right: 15px;
+}
+.recomendation_feed_feed_recomendation img {
+    width: 100%;
+    border-radius: 10px;
+}
+.recomendation_feed_feed_recomendation h2 {
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.like {
+    background-image: url("img/EvenMoreUtils.svg");
+    background-position-y: -28px;
+    background-size: 30px;
+    height: 15px;
+    width: 15px;
+    transform: translateY(-29px);
+    background-repeat: no-repeat;
+    font-size: small;
+    font-family: Builder Sans,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    color: rgb(73, 77, 90);
 }
