@@ -28,6 +28,7 @@ body {
     border-bottom: solid #FFFFFF 2px;
     display: grid;
     grid-template: 42px / 175px 32vw 1fr 10fr 1fr 1fr 1fr 1fr 10px;
+    width: 100vw;
 }
 .home_button {
     grid-area: 1 / 1 / span 1 / span 1;
